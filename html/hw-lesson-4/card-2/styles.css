@@ -1,0 +1,49 @@
+.abcdef{
+    margin: 20px;
+    display: block;
+
+}
+.a{
+    width: 100%;
+    height: 200px;
+    background-color: darkgray;
+}
+.bcdef{
+    display: flex;
+    column-gap: 20px;
+    margin-top: 20px;
+}
+.bcde{
+    flex: 3;
+}
+.b{
+    background-color: darkgray;
+    height: 150px;
+    margin-bottom: 20px;
+}
+.cde{
+    display: flex;
+    column-gap: 20px;
+}
+.c, .d, .e{
+    flex: 1;
+    height: 200px;
+    background-color: darkgray;
+}
+.f{
+    background-color: darkgray;
+    flex: 1;
+    height: 370px;
+}
+@media (max-width: 400px) {
+    .bcdef{
+        display: block;
+    }
+    .c, .d, .e{
+        height: 100px;
+        margin-bottom: 20px;
+    }
+    .f{
+        height: 200px;
+    }
+}

@@ -1,0 +1,146 @@
+.container{
+    margin: 30px;
+    color: white;
+    text-align: center;
+}
+.heading{
+    column-gap: 20px;
+    display: flex;
+    height: 70px;
+}
+.logo{
+    flex: 1;
+    background-color: #563b2b;
+}
+.header{
+    flex: 1;
+    background-color: #563b2b;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-sec{
+    display: block;
+}
+.main{
+    display: flex;
+    margin: 20px 0;
+}
+.main-section{
+    display: block;
+    flex: 3;
+}
+.group-nav{
+    flex: 1;
+    margin-right: 20px;
+}
+.nav{
+    height: 430px;
+    background-color: #563b2b;
+}
+.intro-ad{
+    column-gap: 20px;
+    display: flex;
+    height: 250px;
+}
+.intro{
+    flex: 1;
+    background-color: #563b2b;
+}
+.ad{
+    flex: 1;
+    background-color: #563b2b;
+}
+.info{
+    margin-top: 20px;
+    flex: 3;
+    column-gap: 20px;
+    display: flex;
+    min-height: 500px;
+}
+.types{
+    flex: 1;
+    background-color: #563b2b;
+}
+.related{
+    flex: 1;
+    background-color: #563b2b;
+}
+.store{
+    background-color: #563b2b;
+    margin: 20px 0;
+    height: 150px;
+}
+.tools{
+    background-color: #563b2b;
+    height: 150px;
+}
+.footer{
+    margin-top: 20px;
+    background-color: #563b2b;
+    height: 100px;
+}
+.nav-new{
+    display: none;
+}
+.new-store{
+    display: none;
+}
+.new-tools{
+    display: none;
+}
+@media (max-width: 600px){
+    .logo{
+        flex: 1;
+    }
+    .header{
+        flex: 3;
+    }
+    .group-nav{
+        display: none;
+    }
+    .info{
+        display: block;
+    }
+    .intro{
+        flex: 3;
+    }
+    .ad{
+        flex: 1;
+    }
+    .nav-new{
+        display: flex;
+        background-color: #563b2b;
+        margin-bottom: 20px;
+        height: 150px;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .types{
+        height: 400px;
+        margin: 20px 0;
+    }
+    .related{
+        height: 200px;
+    }
+    .extra-div{
+        display: flex;
+        column-gap: 20px;
+    }
+    .new-store{
+        flex: 1;
+        display: flex;
+        background-color: #563b2b;
+        height: 150px;
+    }
+    .new-tools{
+        flex: 1;
+        display: flex;
+        background-color: #563b2b;
+        height: 150px;
+    }
+}
