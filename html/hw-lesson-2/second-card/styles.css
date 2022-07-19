@@ -1,0 +1,23 @@
+.container{
+    margin: 0 auto;
+    column-gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.item{
+    border: 1px solid grey;
+    padding: 15px;
+    text-align: center;
+}
+h3{
+    font-weight: 600;
+}
+.text{
+    color: gray;
+}
+.button{
+    padding: 10px;
+    margin: 0 auto;
+    width: 100px;
+    border: 1px solid black;
+}
