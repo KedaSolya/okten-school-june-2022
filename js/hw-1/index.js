@@ -27,43 +27,6 @@
 
 // additional
 
-// - Створити масив об'єктів з назвою books з наступними полями  - назва, кількість сторінок, жанр, автори. Вивести кожну книгу як окремий об'єкт
-// let books = [
-//     {
-//         name: "Leaving Time",
-//         pageAmount: 205,
-//         genre: "thriller",
-//         authors: "Jodi Picoult"
-//     },
-//     {
-//         name: "Until the End of Time",
-//         pageAmount: 313,
-//         genre: "romance",
-//         authors: "Danielle Steel"
-//     },
-//     {
-//         name: "The Martian",
-//         pageAmount: 267,
-//         genre: "science fiction",
-//         authors: "Andy Weir"
-//     }
-// ]
-// for (const book of books) {
-//     console.log(book)
-// }
-
-// - Створити об'єкт book з наступними полями :
-//          назва, (тип string)
-//          кількість сторінок (числовий тип),
-//          жанр (string)
-//          автори (тип - масив, кожен елемент масиву - це стрінга)
-// let book = {
-//     name: "The Talisman",
-//     pageAmount: 310,
-//     genre: "romance",
-//     authors: ["Stephen King", "Peter Straub"]
-// }
-
 // Напишіть код, який вираховує площу прямокутника висотою 23см. (змінна height) та шириною 10см (змінна width).
 // Значення площі зберігати в змінній s.
 // function square(height, width){
