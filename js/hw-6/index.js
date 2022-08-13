@@ -58,24 +58,221 @@
 //     {title: 'Frontend', monthDuration: 4}
 // ];
 // -- відсортувати його за спаданням за monthDuration
+// coursesAndDurationArray.sort((a,b)=>{
+//     return b.monthDuration - a.monthDuration;
+// })
 
 // -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
-//
+// const result = coursesAndDurationArray.filter(value => value.monthDuration > 5);
+
 // описати колоду карт
+// let cards = [
+//     {
+//         value: '6',
+//         suit: 'heart',
+//         color: 'red'
+//     },
+//     {
+//         value: '6',
+//         suit: 'diamond',
+//         color: 'red'
+//     },
+//     {
+//         value: '6',
+//         suit: 'spade',
+//         color: 'black'
+//     },
+//     {
+//         value: '6',
+//         suit: 'clubs',
+//         color: 'black'
+//     },
+//     {
+//         value: '7',
+//         suit: 'heart',
+//         color: 'red'
+//     },
+//     {
+//         value: '7',
+//         suit: 'diamond',
+//         color: 'red'
+//     },
+//     {
+//         value: '7',
+//         suit: 'spade',
+//         color: 'black'
+//     },
+//     {
+//         value: '7',
+//         suit: 'clubs',
+//         color: 'black'
+//     },
+//     {
+//         value: '8',
+//         suit: 'heart',
+//         color: 'red'
+//     },
+//     {
+//         value: '8',
+//         suit: 'diamond',
+//         color: 'red'
+//     },
+//     {
+//         value: '8',
+//         suit: 'spade',
+//         color: 'black'
+//     },
+//     {
+//         value: '8',
+//         suit: 'clubs',
+//         color: 'black'
+//     },
+//     {
+//         value: '9',
+//         suit: 'heart',
+//         color: 'red'
+//     },
+//     {
+//         value: '9',
+//         suit: 'diamond',
+//         color: 'red'
+//     },
+//     {
+//         value: '9',
+//         suit: 'spade',
+//         color: 'black'
+//     },
+//     {
+//         value: '9',
+//         suit: 'clubs',
+//         color: 'black'
+//     },
+//     {
+//         value: '10',
+//         suit: 'heart',
+//         color: 'red'
+//     },
+//     {
+//         value: '10',
+//         suit: 'diamond',
+//         color: 'red'
+//     },
+//     {
+//         value: '10',
+//         suit: 'spade',
+//         color: 'black'
+//     },
+//     {
+//         value: '10',
+//         suit: 'clubs',
+//         color: 'black'
+//     },
+//     {
+//         value: 'jack',
+//         suit: 'heart',
+//         color: 'red'
+//     },
+//     {
+//         value: 'jack',
+//         suit: 'diamond',
+//         color: 'red'
+//     },
+//     {
+//         value: 'jack',
+//         suit: 'spade',
+//         color: 'black'
+//     },
+//     {
+//         value: 'jack',
+//         suit: 'clubs',
+//         color: 'black'
+//     },
+//     {
+//         value: 'queen',
+//         suit: 'heart',
+//         color: 'red'
+//     },
+//     {
+//         value: 'queen',
+//         suit: 'diamond',
+//         color: 'red'
+//     },
+//     {
+//         value: 'queen',
+//         suit: 'spade',
+//         color: 'black'
+//     },
+//     {
+//         value: 'queen',
+//         suit: 'clubs',
+//         color: 'black'
+//     },
+//     {
+//         value: 'king',
+//         suit: 'heart',
+//         color: 'red'
+//     },
+//     {
+//         value: 'king',
+//         suit: 'diamond',
+//         color: 'red'
+//     },
+//     {
+//         value: 'king',
+//         suit: 'spade',
+//         color: 'black'
+//     },
+//     {
+//         value: 'king',
+//         suit: 'clubs',
+//         color: 'black'
+//     },
+//     {
+//         value: 'ace',
+//         suit: 'heart',
+//         color: 'red'
+//     },
+//     {
+//         value: 'ace',
+//         suit: 'diamond',
+//         color: 'red'
+//     },
+//     {
+//         value: 'ace',
+//         suit: 'spade',
+//         color: 'black'
+//     },
+//     {
+//         value: 'ace',
+//         suit: 'clubs',
+//         color: 'black'
+//     },
+//     {
+//         value: 'joker',
+//         suit: null,
+//         color: 'red'
+//     },
+//     {
+//         value: 'joker',
+//         suit: null,
+//         color: 'black'
+//     }
+// ]
 // - знайти піковий туз
+// console.log(cards.find(item => item.value === "ace" && item.suit === "spade"))
+
 // - всі шістки
+// console.log(cards.filter(item => item.value === "six"))
+
 // - всі червоні карти
+// console.log(cards.filter(item => item.color === "red"))
+
 // - всі буби
+// console.log(cards.filter(item => item.suit === "diamond"))
+
 // - всі трефи від 9 та більше
-//
-//
-// {
-//     cardSuit: '', // 'spade', 'diamond','heart', 'clubs'
-//     value: '', // '6'-'10', 'ace','jack','queen','king','joker'
-//     color:'', // 'red','black'
-// }
-//
-//
+// console.log(cards.filter(item => item.suit === "clubs" && item.value === "9" || item.suit === "clubs" && item.value === "10" || item.suit === "clubs" && item.value.length > 2))
+
 // Додатково по reduce
 // Взяти описану колоду карт, та за допомоги редюсу попакувати всі карти по "мастях" в об'єкт
 // {
@@ -84,3 +281,14 @@
 //     hearts:[],
 //     clubs:[]
 // }
+// console.log(cards.reduce(function (accumulator, card){
+//     if (card.suit === "spade")
+//         accumulator.spades.push(card)
+//     if (card.suit === "diamond")
+//         accumulator.diamonds.push(card)
+//     if (card.suit === "heart")
+//         accumulator.hearts.push(card)
+//     if (card.suit === "clubs")
+//         accumulator.clubs.push(card)
+//     return accumulator
+// },{spades:[],diamonds:[],hearts:[],clubs:[]}))
