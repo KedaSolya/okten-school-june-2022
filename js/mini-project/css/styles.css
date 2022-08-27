@@ -1,0 +1,114 @@
+/*index.html*/
+.wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    row-gap: 40px;
+    column-gap: 40px;
+    width: 60%;
+}
+.user {
+    display: block;
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 25px;
+    border: 1px solid #DBFADF;
+    background-color: #DBFADF;
+    transition: 1s;
+}
+.user > p {
+    font-size: 30px;
+}
+.user > a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.user:hover {
+    border: 1px solid #629f79;
+    background-color: #629f79;
+}
+.user > a:hover {
+    color: #DBFADF;
+}
+
+/*user-details.html*/
+.user-info {
+    text-align: center;
+    line-height: 2;
+    border-radius: 25px;
+    border: 10px solid #C7B4BB;
+    background-color: #E7D1DE;
+    letter-spacing: 2px;
+    margin: 0 60px;
+}
+.post-details {
+    margin: 20px;
+    width: 90%;
+    padding: 20px 0;
+    border: 1px solid #C7B4BB;
+    border-radius: 25px;
+    background-color: #C7B4BB;
+    cursor: pointer;
+    font-size: 20px;
+}
+.wrapping-posts {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 50px;
+}
+.div-post {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    border: 5px solid #C7B4BB;
+    border-radius: 25px;
+    background-color: #E7D1DE;
+    margin: 10px;
+    font-size: 17px;
+    font-weight: 700;
+}
+.div-post > button {
+    padding: 10px 0;
+    width: 30%;
+    border: 1px solid #C7B4BB;
+    border-radius: 25px;
+    background-color: #C7B4BB;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    transition: 1s;
+}
+.div-post > button:hover {
+    border: 1px solid #E7D1DE;
+    background-color: #E7D1DE;
+    color: black;
+}
+
+/*post-details.html*/
+.container {
+    border: 10px solid #83bce7;
+    border-radius: 25px;
+    background-color: #AAE1F7;
+    text-align: center;
+    padding: 20px;
+}
+.items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.item{
+    margin: 20px;
+    border-radius: 25px;
+    border: 5px solid #83bce7;
+    transition: 1s;
+}
+.container > p {
+    font-weight: bold;
+    font-size: 20px;
+}
+.item:hover{
+    background-color: #83bce7;
+}
